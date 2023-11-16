@@ -26,7 +26,6 @@ Hier ben ik mijn component: "header/navbar" opnieuw gaan realiseren.
 * Open een live server door middel van Visual studio code
 
 * NPM- install 
-* # or start the server and open the app in a new browser tab
 npm run dev -- --open
   
 ## Gebruik 🖇
