@@ -65,7 +65,7 @@
         opacity: 0;
     }
     to {
-        height: 35vh; /* Replace with the actual height of the `.nav` element */
+        height: 55vh; /* Replace with the actual height of the `.nav` element */
         opacity: 1;
     }
 }
@@ -76,19 +76,19 @@
         top: 100%;
         left: 0;
         width: 100vw;
-        height: 35vh;
+        height: 55vh;
         z-index: 1;
         overflow: visible;
         background-color: var(--candelLight);
-        transition:  0.4s ease-out;
-        animation: slideIn 0.4s ease-in-out forwards; /* Apply animation */
+        transition:  0.2s ease-out;
+        animation: slideIn 0.2s ease-in-out forwards; /* Apply animation */
     }
 
     
 
     nav ul{
         display: flex;
-        margin: 2vh 4vh;
+        margin: 4vh 4vh;
         gap: 5vh;
         flex-direction: column;
         align-items: center;
@@ -114,7 +114,7 @@
         left: 0;
         width: 100%;
         height: 2px;
-        background-color: var(--justWhite);
+        background-color: var(--charcoal);
     }
 
     nav li{
