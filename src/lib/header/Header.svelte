@@ -59,6 +59,17 @@
         display: none;
     }
 
+    @keyframes slideIn {
+    from {
+        height: 0;
+        opacity: 0;
+    }
+    to {
+        height: 35vh; /* Replace with the actual height of the `.nav` element */
+        opacity: 1;
+    }
+}
+
     nav.open{
         display: block;
         position: absolute;
@@ -69,8 +80,11 @@
         z-index: 1;
         overflow: visible;
         background-color: var(--candelLight);
-        transition:  0.3s ease-in-out;
+        transition:  0.4s ease-out;
+        animation: slideIn 0.4s ease-in-out forwards; /* Apply animation */
     }
+
+    
 
     nav ul{
         display: flex;
