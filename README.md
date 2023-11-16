@@ -12,7 +12,7 @@
 
 ## Beschrijving 📝
 
-Hier ben ik mijn component: "header/navbar" opnieuw gaan realiseren.
+Hier ben ik mijn component: "header/navbar" opnieuw gaan realiseren op basis van web standaarden en de principes van progressive enhancement, toegankelijkheid, responsive design en performance.
 
 
 ## Kenmerken 📌
