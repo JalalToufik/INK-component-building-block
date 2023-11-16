@@ -1,74 +1,158 @@
 <script>
     import logo from '../INK-logo.svg'
+
+    let isMenuOpen = false;
+
+    function toggleMenu(){
+        isMenuOpen = !isMenuOpen;
+    }
 </script>
 
 <header>
-    <nav>
-        <a href="/">
-            <img src={logo} alt="logo" />
-        </a>
+    <a href="/">
+        <img src={logo} alt="logo" />
+    </a>
+    <nav class:open={isMenuOpen}>
         <ul>
-            <li>
-                <a href="/about" class="">About</a>
-            </li>
-            <li>
-                <a href="/promise" class="">Promise</a>
-            </li>
-            <li>
-                <a href="/becomeSponsor"class="sponsor-button">Become a sponsor</a>
-            </li>
+            <li><a href="/" class="current">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/promise">Promise</a></li>
+            <li class="sponsor-button"><a href="/becomeSponsor" class="sponsor-button-text">Become a sponsor</a></li>
         </ul>
     </nav>
 
-    <div class="burger-menu">
+    <button class="burger-menu" on:click={toggleMenu}>
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
-    </div>
+    </button>
 
 </header>
 
 <style>
 
     header{
-        padding: 2em;
+        padding: 1.5em;
         background-color: var(--charcoal);
-    }
 
-    nav{
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        position: relative;
+
     }
 
-    nav img{
+    header img{
         width: clamp(25px, 8vw, 65px);
     }
     
-    nav img:hover{
+    header img:hover{
         scale: 1.1;
+    }
+
+    header a{
+        text-transform: uppercase;
+    }
+
+    /* Mobile slider nav */
+    nav{
+        display: none;
+    }
+
+    nav.open{
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100vw;
+        height: 35vh;
+        z-index: 1;
+        overflow: visible;
+        background-color: var(--candelLight);
+        transition:  0.3s ease-in-out;
     }
 
     nav ul{
         display: flex;
-        gap: 2em;
+        margin: 2vh 4vh;
+        gap: 5vh;
+        flex-direction: column;
         align-items: center;
     }
 
     nav a{
-        color: var(--justWhite);
-        text-transform: uppercase;
-        font-family: var(--copy-font);
+        color: var(--charcoal);
+        font-size: 1.6em;
+        font-family: 'Apercu';
+        font-weight: 900;
+        letter-spacing: 0.08rem;
+        line-height: 100%;
     }
+
+    .current{
+        position: relative;
+    }
+
+    .current::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: var(--justWhite);
+    }
+
+    nav li{
+        margin-bottom: .5em;
+    }
+
+    nav li:hover{
+        scale: 1.1;
+    }
+
 
     .sponsor-button{
-        margin-left: 1em;
-        font-weight: bold;
         border: none;
         border-radius: 3em;
-        padding: 1em 2em;
-
-        background-color: var(--candelLight);
-        color: var(--charcoal);
+        padding: .7em 1.2em;
+        background-color: var(--pictonBlue);
     }
+
+    .sponsor-button-text{
+        font-size: .9em;
+        color: var(--justWhite);
+    }
+
+    /* Hambuger menu */
+
+    .burger-menu{
+        height: 3em;
+        aspect-ratio: 1;
+        border: 2px solid var(--candelLight);
+        background-color: var(--candelLight);
+        border-radius: 50%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .burger-menu > div{
+        height: 2px;
+        width: 14px;
+        background-color: var(--charcoal);
+        position: absolute;
+    }
+
+    .bar1{
+        transform: translateY(-5px);
+    }
+
+    .bar3{
+        transform: translateY(5px);
+    }
+
+
 
 </style>

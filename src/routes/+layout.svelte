@@ -17,7 +17,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    font-family: var(--copy-font);
+    font-family: var(--Apercu-font);
   }
 
   /* Color variable */
@@ -30,7 +30,7 @@
     --jungleGreen: #163A3A;
     --plantGreen: #179446;
     --pictonBlue: #3DBAE1;
-    --copy-font: 'Apercu pro', sans-serif;
+    --Apercu-font: 'Apercu pro', sans-serif;
     --paragraph-font: 'Jubilat', serif;
     --header-font: 'Kirang Haerang', sans-serif;
     --link-hover-color: #FFDA1D;
@@ -44,21 +44,8 @@
   color: var(--justWhite);
   width: 100%;
   height: 100vh;
-  overflow-x: hidden;
-  display: flex;
-  flex-direction: column;
   overflow: hidden;
-
-  overflow-y: scroll; 
-  overflow-x: scroll;
 }
 
-:global(main){
-  margin-top: 6em;
-}
-
-:global(h1,h2){
-  font-family: 'Kirang Haerang';
-}
   
 </style>
