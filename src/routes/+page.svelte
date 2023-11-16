@@ -1,7 +1,4 @@
 <script>
-    import Header from "../lib/components/Header.svelte";
-
-    // export let data
 
 </script>
 
@@ -9,11 +6,9 @@
     <title>INK</title>
 </svelte:head>
 
-<Header />
-
-<main>
-
-</main>
+<section>
+    <slot />
+</section>
 
 
 <style>
