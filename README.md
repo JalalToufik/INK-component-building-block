@@ -1,38 +1,40 @@
-# create-svelte
+# INK - Header - Component building block
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
-## Creating a project
+## Inhoudsopgave
 
-If you're seeing this, you've probably already done this step. Congrats!
+  * [Beschrijving](#beschrijving)
+  * [Kenmerken](#kenmerken)
+  * [Installatie](#installatie)
+  * [Gebruik](#gebruik)
+  * [Bronnen](#bronnen)
+  * [Licentie](#licentie)
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Beschrijving 📝
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+Hier ben ik mijn component: "header/navbar" opnieuw gaan realiseren op basis van web standaarden en de principes van progressive enhancement, toegankelijkheid, responsive design en performance.
 
-## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## Kenmerken 📌
+* 🖥 Sveltekit
+* 🖥 HTML, CSS, JAVASCRIPT
+* 🖥 Github
 
-```bash
-npm run dev
+## Installatie 📲
+* Clone deze repository.
+* Open de repository in je code-editor
+* Open een live server door middel van Visual studio code
 
-# or start the server and open the app in a new browser tab
+* NPM- install 
 npm run dev -- --open
-```
+  
+## Gebruik 🖇
+Ik heb mijn project ontwikkeld met SvelteKit.
 
-## Building
+## Bronnen 📚
 
-To create a production version of your app:
+* [Sveltekit documentatie](https://kit.svelte.dev/)
 
-```bash
-npm run build
-```
+## Licentie
 
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+This project is licensed under the terms of the [MIT license](./LICENSE).
