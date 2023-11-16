@@ -26,6 +26,7 @@
     --charcoal: #051A1A;
     --candelLight: #FFDA1D;
     --justWhite: #FFFFFF;
+    --jungleDarkGreen: #0c2121;
     --jungleGreen: #163A3A;
     --plantGreen: #179446;
     --pictonBlue: #3DBAE1;
@@ -39,7 +40,7 @@
 
 
 :global(body) {
-  background-color: var(--charcoal);
+  background-color: var(--jungleDarkGreen);
   color: var(--justWhite);
   width: 100%;
   height: 100vh;

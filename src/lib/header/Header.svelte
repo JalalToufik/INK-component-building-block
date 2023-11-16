@@ -15,7 +15,7 @@
                 <a href="/promise" class="">Promise</a>
             </li>
             <li>
-                <a href="/becomeSponsor"class="">Become a sponsor</a>
+                <a href="/becomeSponsor"class="sponsor-button">Become a sponsor</a>
             </li>
         </ul>
     </nav>
@@ -32,7 +32,7 @@
 
     header{
         padding: 2em;
-        background-color: var(--jungleGreen);
+        background-color: var(--charcoal);
     }
 
     nav{
@@ -56,5 +56,19 @@
 
     nav a{
         color: var(--justWhite);
+        text-transform: uppercase;
+        font-family: var(--copy-font);
     }
+
+    .sponsor-button{
+        margin-left: 1em;
+        font-weight: bold;
+        border: none;
+        border-radius: 3em;
+        padding: 1em 2em;
+
+        background-color: var(--candelLight);
+        color: var(--charcoal);
+    }
+
 </style>
