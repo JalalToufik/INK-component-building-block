@@ -60,15 +60,15 @@
     }
 
     @keyframes slideIn {
-    from {
-        height: 0;
-        opacity: 0;
+        from {
+            height: 0;
+            opacity: 0;
+        }
+        to {
+            height: 55vh; /* Replace with the actual height of the `.nav` element */
+            opacity: 1;
+        }
     }
-    to {
-        height: 55vh; /* Replace with the actual height of the `.nav` element */
-        opacity: 1;
-    }
-}
 
     nav.open{
         display: block;
