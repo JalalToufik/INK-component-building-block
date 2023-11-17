@@ -17,7 +17,7 @@
             <li><a href="/" class="current">Home</a></li>
             <li><a href="/about">About</a></li>
             <li><a href="/promise">Promise</a></li>
-            <li class="sponsor-button"><a href="/becomeSponsor" class="sponsor-button-text">Become a sponsor</a></li>
+            <li class="sponsor-button"><a href="/becomeSponsor" class="sponsor-button-text">Become a Sponsor</a></li>
         </ul>
     </nav>
 
